@@ -22,8 +22,38 @@ $black-transparent: rgba(84, 84, 84, 0.2);
   background: linear-gradient(to right, $secondary-color, $primary-color);
   background-clip: text;
   -webkit-background-clip: text;
-  //   text-shadow: 2px 2px 3px $primary-color;
-  //   border-style: solid;
-  //   border-width: 10px;
-  //   border-image: linear-gradient(to right, $secondary-color, $primary-color);
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+.input-form {
+  input {
+    width: 100%;
+    padding: 16px 40px;
+    color: $primary-color;
+    font-size: 24px;
+    font-family: $primary-font;
+    border-radius: 20px;
+    border: solid 1px $primary-color;
+  }
+
+  input:focus-visible {
+    border: solid 1px $primary-color;
+    outline: solid 1px $primary-color;
+  }
+
+  label {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: $primary-font;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+
+.input-form input::placeholder {
+  color: $primary-color-transparent;
 }
