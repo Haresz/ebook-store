@@ -10,3 +10,20 @@ $primary-color-transparent: rgba(0, 107, 161, 0.2);
 $secondary-color: #38b8fa;
 $black-color: #545454;
 $black-transparent: rgba(84, 84, 84, 0.2);
+
+.headline {
+  display: inline;
+  padding: 0 18px;
+  font-family: $primary-font;
+  font-size: 96px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 20px transparent;
+  background: linear-gradient(to right, $secondary-color, $primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  //   text-shadow: 2px 2px 3px $primary-color;
+  //   border-style: solid;
+  //   border-width: 10px;
+  //   border-image: linear-gradient(to right, $secondary-color, $primary-color);
+}

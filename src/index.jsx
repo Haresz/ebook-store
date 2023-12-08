@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import "./style/style.scss";
+import Headline from "./component/headline";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <p>"HALO WORLD"</p>
-);
+const root = createRoot(document.getElementById("root"));
+root.render(<Headline name="REGISTER" />);
