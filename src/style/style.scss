@@ -31,8 +31,9 @@ input {
 
 .input-form {
   input {
+    box-sizing: border-box;
     width: 100%;
-    padding: 16px 40px;
+    padding: 16px 0px 16px 40px;
     color: $primary-color;
     font-size: 24px;
     font-family: $primary-font;
@@ -67,4 +68,25 @@ input {
   background-color: $primary-color;
   color: white;
   border: none;
+}
+
+.container-relog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .form {
+    width: 50%;
+    margin: 102px 70px 10px;
+
+    .acount {
+      img {
+        width: 48px;
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+  }
 }

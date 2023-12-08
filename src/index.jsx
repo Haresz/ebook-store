@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style/style.scss";
-import ButtonFill from "./component/ButtonFill";
+import LoginPage from "./pages/LoginPage";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<ButtonFill name="Submit" />);
+root.render(<LoginPage />);
