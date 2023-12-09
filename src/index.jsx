@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style/style.scss";
-import RegisterPage from "./pages/RegisterPage";
+import Navbar from "./component/Navbar";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<RegisterPage />);
+root.render(<Navbar />);

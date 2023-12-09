@@ -144,23 +144,6 @@ input {
       }
     }
 
-    .container-icon {
-      display: flex;
-      align-items: center;
-      margin-top: 80px;
-
-      img {
-        width: 28px;
-      }
-
-      p {
-        font-family: $primary-font;
-        font-size: $fontsize-headline;
-        font-weight: 100;
-        color: $black-color;
-      }
-    }
-
     .space {
       height: 60px;
     }
@@ -171,5 +154,22 @@ input {
     margin: 16px;
     align-self: center;
     border-radius: 16px;
+  }
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+
+  img {
+    width: 28px;
+  }
+
+  p {
+    font-family: $primary-font;
+    font-size: $fontsize-headline;
+    font-weight: 100;
+    color: $black-color;
   }
 }
