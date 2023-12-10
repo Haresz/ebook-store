@@ -249,3 +249,38 @@ nav {
     color: $primary-color;
   }
 }
+
+.card-book {
+  width: 140px;
+  display: block;
+  flex-direction: column;
+  padding: 20px 40px;
+  box-shadow: 2px 2px 8px #38b9fa8a;
+  border-radius: 12px;
+
+  img {
+    width: 140px;
+    margin-bottom: 18px;
+  }
+
+  h4 {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    font-family: $primary-font;
+    font-size: $fontsize-content2;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #006ba1;
+  }
+
+  p {
+    width: 140px;
+    margin-bottom: 24px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    color: $black-color;
+  }
+}
