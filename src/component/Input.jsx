@@ -1,15 +1,11 @@
 import React from "react";
 
-function Input(props) {
+function Input({ label, name, placeholder, dashboard }) {
   return (
     <div className="input-form">
-      <label htmlFor="">{props.label}</label>
-      <input
-        name={props.label}
-        id={props.label}
-        placeholder={props.placeholder}
-        type="text"
-      />
+      {dashboard === true ? <img src="public/search.svg" /> : null}
+      <label htmlFor="">{label}</label>
+      <input name={label} id={label} placeholder={placeholder} type="text" />
     </div>
   );
 }

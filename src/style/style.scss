@@ -164,6 +164,7 @@ input {
 
   img {
     width: 28px;
+    margin-right: 8px;
   }
 
   p {
@@ -171,5 +172,58 @@ input {
     font-size: $fontsize-headline;
     font-weight: 100;
     color: $black-color;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 150px;
+  box-shadow: 0px 4px rgba(0, 169, 255, 0.15);
+
+  .container-icon {
+    margin: 0;
+  }
+
+  .nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .input-form {
+      position: relative;
+      margin: 0 18px;
+
+      input {
+        margin: 0;
+        font-size: $fontsize-content2;
+        border-radius: 20px;
+      }
+
+      img {
+        top: 4px;
+        left: 15px;
+        width: 20px;
+        position: absolute;
+      }
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+
+    .photo-profile-name {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 4px;
+        font-family: $primary-font;
+        font-size: $fontsize-content2;
+        font-weight: 400;
+        color: $black-color;
+      }
+    }
   }
 }
