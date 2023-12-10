@@ -227,3 +227,25 @@ nav {
     }
   }
 }
+
+.category {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  cursor: pointer;
+
+  img {
+    width: 60px;
+    margin-right: 8px;
+  }
+
+  p {
+    font-family: $secondary-font;
+    font-size: $fontsize-title;
+    color: $primary-color;
+  }
+}
