@@ -1,4 +1,4 @@
-const dataBook = [
+const DataBook = [
   {
     image: "public/book/book-1.png",
     title: "How to Win Friends & Influence People",
@@ -48,3 +48,5 @@ const dataBook = [
     isRecommended: false,
   },
 ];
+
+export default DataBook;
