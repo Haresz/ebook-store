@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./Input";
 
-function Navbar() {
+function Navbar({ dashboard, detail }) {
   return (
     <nav>
       <div className="container-icon">
@@ -9,12 +9,16 @@ function Navbar() {
         <p>CAPCIN</p>
       </div>
       <div className="nav-right">
-        <img src="public/mybook.svg" alt="" />
-        <Input dashboard={true} placeholder="Search" />
-        <div className="photo-profile-name">
-          <img src="public/fotoprofil.svg" alt="fotoProfil" />
-          <p>Hi Haresz!</p>
-        </div>
+        {dashboard === true ? <img src="public/mybook.svg" alt="" /> : null}
+        {detail === false || dashboard === true ? (
+          <Input search={true} placeholder="Search" />
+        ) : null}
+        {dashboard === true ? (
+          <div className="photo-profile-name">
+            <img src="public/fotoprofil.svg" alt="fotoProfil" />
+            <p>Hi Haresz!</p>
+          </div>
+        ) : null}
       </div>
     </nav>
   );
