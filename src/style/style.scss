@@ -176,14 +176,25 @@ input {
 }
 
 nav {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 150px;
+  padding: 18px 150px;
   box-shadow: 0px 4px rgba(0, 169, 255, 0.15);
 
   .container-icon {
     margin: 0;
+
+    img {
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    p {
+      font-size: 26px;
+    }
   }
 
   .nav-right {
@@ -233,7 +244,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 20px;
+  padding: 14px 32px;
   border: 1px solid $primary-color;
   border-radius: 10px;
   cursor: pointer;
@@ -340,6 +351,7 @@ footer {
 }
 
 .container-cardbook {
+  margin: 60px 150px;
   .title-container-cardbook {
     display: flex;
     justify-content: space-between;
@@ -359,6 +371,56 @@ footer {
     }
   }
   .container-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.dashboard {
+  .dashboard-headline {
+    height: 400px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .background-left,
+    .background-right {
+      width: 70%;
+      height: 400px;
+      position: absolute;
+    }
+
+    .background-left {
+      left: 0;
+      border-radius: 0px 248px 248px 0px;
+      background: linear-gradient(90deg, #89cff3 1.19%, #a0e9ff 96.33%);
+    }
+
+    .background-right {
+      right: 0;
+      z-index: 8;
+      border-radius: 248px 0px 0px 248px;
+      background: linear-gradient(
+        90deg,
+        rgba(137, 207, 243, 0.5) 99.66%,
+        rgba(0, 169, 255, 0.71) 0.28%
+      );
+    }
+
+    h1 {
+      width: 40%;
+      text-align: center;
+      z-index: 9;
+      font-family: $primary-font;
+      font-size: $fontsize-headline;
+      color: azure;
+    }
+  }
+
+  .container-category {
+    margin: 100px 150px;
     display: flex;
     justify-content: space-between;
   }

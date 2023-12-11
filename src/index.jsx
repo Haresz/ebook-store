@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style/style.scss";
-import ContainerCardBook from "./component/ContainerCardBook";
+import Dashboard from "./pages/Dashboard";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<ContainerCardBook title="REKOMENDASI BUKU" />);
+root.render(<Dashboard />);
