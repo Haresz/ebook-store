@@ -20,7 +20,7 @@ function Footer() {
             <img src="public/footer/YouTube.svg" alt="YouTube" />
             <img src="public/footer/Twiter.svg" alt="Twiter" />
             <img src="public/footer/LinkInd.svg" alt="LinkInd" />
-            <img src="public/footer/Facebook.svg" alt="Facebook" />
+            <img src="public/footer/Facebook-fo.svg" alt="Facebook" />
           </div>
         </div>
         <div className="help">

@@ -284,3 +284,57 @@ nav {
     color: $black-color;
   }
 }
+
+footer {
+  padding: 80px 150px 8px;
+  background-color: $primary-color;
+  color: azure;
+
+  h2,
+  h3 {
+    font-family: $secondary-font;
+    font-size: $fontsize-content2;
+  }
+
+  h2 {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: $fontsize-content2;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: $fontsize-content3;
+    }
+
+    .promo,
+    .help {
+      line-height: 2;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .container-icon {
+        justify-content: space-between;
+        max-width: 500px;
+        margin-top: 0;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-top: 18px;
+  }
+}
