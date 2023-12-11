@@ -11,18 +11,13 @@ function ContainerCardBook({ title, datas, src }) {
       </div>
       <div className="container-content">
         {datas?.map((data) => (
-          <CardBook src={data.image} title={data.title} author={data.author} />
+          <CardBook
+            key={data.title}
+            src={data.image}
+            title={data.title}
+            author={data.author}
+          />
         ))}
-      </div>
-      <div className="container-populer__author">
-        <img src="public/btn-left" alt="button-left" />
-        <div className="content-populer__author">
-          <h3>Popular Author</h3>
-          <div className="content">
-            <div className="mark-manson"></div>
-          </div>
-        </div>
-        <img src="public/btn-right" alt="button-right" />
       </div>
     </div>
   );
