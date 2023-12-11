@@ -23,9 +23,17 @@ function Footer() {
             <img src="public/footer/Facebook.svg" alt="Facebook" />
           </div>
         </div>
+        <div className="help">
+          <h3>Help</h3>
+          <p>Customer & Service</p>
+          <p>Returns</p>
+          <p>Bug</p>
+          <p>Payment</p>
+          <p>Policy</p>
+        </div>
       </div>
       <hr />
-      <h2></h2>
+      <h2>All existing books have a license from the author</h2>
     </footer>
   );
 }
