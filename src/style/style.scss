@@ -298,13 +298,14 @@ nav {
 
 footer {
   padding: 80px 150px 8px;
+  margin-top: 100px;
   background-color: $primary-color;
   color: azure;
 
   h2,
   h3 {
     font-family: $secondary-font;
-    font-size: $fontsize-content2;
+    font-size: $fontsize-content1;
   }
 
   h2 {
@@ -346,7 +347,8 @@ footer {
   }
 
   hr {
-    margin-top: 18px;
+    margin-top: 68px;
+    margin-bottom: 12px;
   }
 }
 
@@ -404,8 +406,8 @@ footer {
       border-radius: 248px 0px 0px 248px;
       background: linear-gradient(
         90deg,
-        rgba(137, 207, 243, 0.5) 99.66%,
-        rgba(0, 169, 255, 0.71) 0.28%
+        rgba(0, 169, 255, 0.71) 0.28%,
+        rgba(137, 207, 243, 0.5) 99.66%
       );
     }
 

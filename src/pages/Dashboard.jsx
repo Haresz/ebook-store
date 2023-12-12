@@ -35,8 +35,16 @@ function Dashboard() {
         <Category src="public/category-education.svg" name="Education" />
         <Category src="public/category-forkids.svg" name="ForKids" />
       </div>
-      <ContainerCardBook title="REKOMENDASI BUKU" datas={rekomendasiBuku} />
-      <ContainerCardBook title="Most Popular" datas={mostPopular} />
+      <ContainerCardBook
+        title="REKOMENDASI BUKU"
+        datas={rekomendasiBuku}
+        dashboard={true}
+      />
+      <ContainerCardBook
+        title="Most Popular"
+        datas={mostPopular}
+        dashboard={true}
+      />
       <div className="container-populer__author">
         <img
           className="btn btn-left"
