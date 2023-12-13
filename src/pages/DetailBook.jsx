@@ -19,7 +19,7 @@ function DetailBook() {
             </div>
             <hr />
             <div className="category-product category-product__detail">
-              <p>100</p>
+              <h4>100</h4>
               <p>Halaman</p>
             </div>
           </div>
@@ -29,36 +29,51 @@ function DetailBook() {
               <h3>About Book</h3>
               <img src="public/arrow-bottom.svg" alt="" />
             </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+              optio harum nobis possimus tenetur mollitia corrupti, blanditiis
+              corporis eveniet suscipit eos ipsum autem laudantium quibusdam.
+              Fugit quibusdam quam voluptatem velit? ....
+            </p>
           </div>
           <div className="container-rating__book">
             <h3>Rating Book</h3>
             <div className="content-rating__book">
-              <h1>3,5</h1>
-              <div className="resume-rate">
+              <div className="average-rating">
+                <h1>3,5</h1>
+                <div className="container-star">
+                  <img src="public/star.svg" alt="" />
+                  <img src="public/star.svg" alt="" />
+                  <img src="public/star.svg" alt="" />
+                  <img src="public/star.svg" alt="" />
+                  <img src="public/star.svg" alt="" />
+                </div>
+              </div>
+              <div className="container-resume-rate">
                 <div className="resume-rate resume-rate__5">
                   <p>5</p>
-                  <div className="line"></div>
+                  <hr className="line" />
                 </div>
                 <div className="resume-rate resume-rate__4">
                   <p>4</p>
-                  <div className="line"></div>
+                  <hr className="line" />
                 </div>
                 <div className="resume-rate resume-rate__3">
                   <p>3</p>
-                  <div className="line"></div>
+                  <hr className="line" />
                 </div>
                 <div className="resume-rate resume-rate__2">
                   <p>2</p>
-                  <div className="line"></div>
+                  <hr className="line" />
                 </div>
                 <div className="resume-rate resume-rate__1">
                   <p>1</p>
-                  <div className="line"></div>
+                  <hr className="line" />
                 </div>
-                <p>100 ulasan</p>
+                <section>100 ulasan</section>
               </div>
-              <ButtonFill name="Tambah Ulasan" />
             </div>
+            <ButtonFill name="Tambah Ulasan" />
           </div>
         </div>
         <img src="public/book/book-4.png" alt="" />

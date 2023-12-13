@@ -496,6 +496,7 @@ footer {
     font-family: $primary-font;
     font-size: $fontsize-title;
     color: $primary-color;
+    font-weight: 500;
   }
 
   .content-detail__book {
@@ -517,9 +518,37 @@ footer {
       color: $secondary-color;
     }
 
-    img {
-      height: 20px;
-      width: 20px;
+    .detail {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+
+      img {
+        height: 40px;
+        width: 40px;
+      }
+
+      p {
+        font-size: $fontsize-content3;
+        color: $black-color;
+      }
+
+      .category-product__detail {
+        text-align: center;
+        h4 {
+          margin-bottom: 10px;
+        }
+        p {
+          bottom: 0;
+        }
+      }
+    }
+
+    button {
+      width: 30%;
+      border-radius: 10px;
+      margin-bottom: 80px;
     }
   }
 
@@ -527,5 +556,82 @@ footer {
     height: 500px;
     width: 200px;
     flex: 1;
+  }
+
+  .container-about__book {
+    margin-bottom: 80px;
+    .title-about__book {
+      display: flex;
+      width: fit-content;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-left: 18px;
+      }
+    }
+
+    p {
+      margin-top: 12px;
+      font-family: $primary-font;
+      font-size: $fontsize-content2;
+      color: $black-color;
+    }
+  }
+
+  .container-rating__book {
+    .content-rating__book {
+      display: flex;
+      .average-rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+          flex: 1;
+          align-self: center;
+          font-family: $primary-font;
+          font-size: 48px;
+          font-weight: 500;
+          line-height: 2;
+          color: $black-color;
+        }
+        .container-star {
+          width: 160px;
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+      .container-resume-rate {
+        margin-left: 120px;
+        .resume-rate {
+          display: flex;
+          p {
+            color: $black-color;
+            width: 12px;
+          }
+          hr {
+            height: 5px;
+            width: 300px;
+            margin-left: 8px;
+            align-self: center;
+            background-color: $black-transparent;
+            border-radius: 4px;
+          }
+        }
+        section {
+          font-size: $fontsize-content3;
+          color: rgba(84, 84, 84, 0.5);
+          margin-left: 18px;
+        }
+      }
+    }
+    button {
+      margin-top: 40px;
+    }
   }
 }
