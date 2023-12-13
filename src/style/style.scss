@@ -480,3 +480,52 @@ footer {
     }
   }
 }
+
+.container-detail__book {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 150px;
+
+  h2 {
+    font-family: $primary-font;
+    font-size: $fontsize-headline;
+    color: $primary-color;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    font-size: $fontsize-title;
+    color: $primary-color;
+  }
+
+  .content-detail__book {
+    margin-right: 160px;
+    flex: 2;
+
+    h4 {
+      margin-top: 8px;
+      font-family: $primary-font;
+      font-size: $fontsize-content1;
+      font-weight: normal;
+      color: rgba(84, 84, 84, 0.5);
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: $fontsize-content2;
+      font-weight: normal;
+      color: $secondary-color;
+    }
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  img {
+    height: 500px;
+    width: 200px;
+    flex: 1;
+  }
+}

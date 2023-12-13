@@ -26,12 +26,12 @@ function DetailBook() {
           <ButtonFill name="ADD BOOK" />
           <div className="container-about__book">
             <div className="title-about__book">
-              <h2>About Book</h2>
+              <h3>About Book</h3>
               <img src="public/arrow-bottom.svg" alt="" />
             </div>
           </div>
           <div className="container-rating__book">
-            <h2>Rating Book</h2>
+            <h3>Rating Book</h3>
             <div className="content-rating__book">
               <h1>3,5</h1>
               <div className="resume-rate">
