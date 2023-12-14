@@ -660,6 +660,30 @@ footer {
   align-items: center;
   background-color: rgba(84, 84, 84, 0.6);
 
+  .notif-tambah-buku {
+    width: 500px;
+    padding: 32px 48px;
+    background-color: white;
+    border: 4px solid $primary-color;
+    border-radius: 20px;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: $fontsize-headline;
+      color: $primary-color;
+    }
+
+    .container-button {
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 30%;
+      }
+    }
+  }
+
   .notif-tambah-ulasan {
     width: 500px;
     padding: 32px 48px;

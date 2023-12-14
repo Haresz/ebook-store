@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style/style.scss";
-import NotifTambahUlasan from "./component/NotifTambahUlasa";
+import NotifAddBokk from "./component/NotifAddBook";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<NotifTambahUlasan />);
+root.render(<NotifAddBokk />);
