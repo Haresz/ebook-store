@@ -4,7 +4,7 @@ import Input from "./Input";
 
 function NotifTambahUlasan() {
   return (
-    <div className="container-notif__tambah__ulasan">
+    <div className="container-notif">
       <div className="notif-tambah-ulasan">
         <h2>Great At Work</h2>
         <h4>Moren T. Hansen</h4>
