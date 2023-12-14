@@ -600,9 +600,16 @@ footer {
           display: flex;
           justify-content: space-between;
 
-          img {
+          svg {
             width: 28px;
             height: 28px;
+          }
+
+          svg:nth-child(-n + 3) path {
+            fill: yellow;
+          }
+          svg:nth-child(4) path {
+            fill: linear-gradient(to right, yellow, null);
           }
         }
       }
@@ -619,8 +626,13 @@ footer {
             width: 300px;
             margin-left: 8px;
             align-self: center;
-            background-color: $black-transparent;
+            // background-color: $black-transparent;
+            background: linear-gradient(90deg, #006ba1 50%, #54545433 50%);
+
             border-radius: 4px;
+          }
+          .resume-rate__5 hr {
+            background: linear-gradient(90deg, #006ba1 50%, #54545433 50%);
           }
         }
         section {
