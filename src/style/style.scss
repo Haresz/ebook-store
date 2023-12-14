@@ -595,23 +595,6 @@ footer {
           line-height: 2;
           color: $black-color;
         }
-        .container-star {
-          width: 160px;
-          display: flex;
-          justify-content: space-between;
-
-          svg {
-            width: 28px;
-            height: 28px;
-          }
-
-          svg:nth-child(-n + 3) path {
-            fill: yellow;
-          }
-          svg:nth-child(4) path {
-            fill: linear-gradient(to right, yellow, null);
-          }
-        }
       }
       .container-resume-rate {
         margin-left: 120px;
@@ -645,5 +628,23 @@ footer {
     button {
       margin-top: 40px;
     }
+  }
+}
+
+.container-star {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  svg:nth-child(-n + 3) path {
+    fill: yellow;
+  }
+  svg:nth-child(4) path {
+    fill: linear-gradient(to right, yellow, null);
   }
 }
