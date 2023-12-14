@@ -648,3 +648,54 @@ footer {
     fill: linear-gradient(to right, yellow, null);
   }
 }
+
+.container-notif__tambah__ulasan {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(84, 84, 84, 0.6);
+
+  .notif-tambah-ulasan {
+    width: 500px;
+    padding: 32px 48px;
+    background-color: white;
+    border: 4px solid $primary-color;
+    border-radius: 20px;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: $fontsize-headline;
+      color: $primary-color;
+    }
+
+    h4 {
+      font-family: $primary-font;
+      font-size: $fontsize-content1;
+      font-weight: normal;
+      color: rgba(84, 84, 84, 0.5);
+    }
+    p {
+      margin-top: 48px;
+      margin-bottom: 12px;
+      font-family: $primary-font;
+      font-size: $fontsize-content1;
+      font-weight: 800;
+      color: rgba(84, 84, 84, 0.5);
+    }
+    input {
+      height: 100px;
+      margin-top: 42px;
+      margin-bottom: 12px;
+    }
+    .button-fill {
+      width: 40%;
+      margin-left: 60%;
+      justify-self: end;
+    }
+  }
+}

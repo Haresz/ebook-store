@@ -82,7 +82,7 @@ function NotifTambahUlasan() {
           </svg>
         </div>
         <Input />
-        <ButtonFill />
+        <ButtonFill name="Submit" />
       </div>
     </div>
   );
