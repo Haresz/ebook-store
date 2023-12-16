@@ -4,22 +4,11 @@ import ContainerCardBook from "../component/ContainerCardBook";
 import DataBook from "../utils/data";
 import Footer from "../component/Footer";
 
-function RekomendasiBuku() {
-  let rekomendasiBuku = [];
-  DataBook.map((data) => {
-    if (data.isRecommended === true) {
-      rekomendasiBuku.push(data);
-      console.log(rekomendasiBuku);
-    }
-  });
+function RekomendasiBuku({ title, datas }) {
   return (
     <>
       <Navbar detail={false} />
-      <ContainerCardBook
-        title="REKOMENDASI BUKU"
-        datas={rekomendasiBuku}
-        dashboard={false}
-      />
+      <ContainerCardBook title={title} datas={datas} dashboard={false} />
       <Footer />
     </>
   );
