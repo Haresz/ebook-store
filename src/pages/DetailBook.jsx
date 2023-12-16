@@ -19,7 +19,7 @@ function DetailBook(props) {
             </div>
             <hr />
             <div className="category-product category-product__detail">
-              <h4>100</h4>
+              <h4>{props.julahHalaman}</h4>
               <p>Halaman</p>
             </div>
           </div>
