@@ -3,15 +3,15 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import ButtonFill from "../component/ButtonFill";
 
-function DetailBook() {
+function DetailBook(props) {
   return (
     <div>
       <Navbar />
       <div className="container-detail__book">
         <div className="content-detail__book">
-          <h2>Great At Work</h2>
-          <h4>Moren T. Hansen</h4>
-          <p>1988</p>
+          <h2>{props.title}</h2>
+          <h4>{props.author}</h4>
+          <p>{props.year}</p>
           <div className="detail">
             <div className="category-product">
               <img src="public/mybook.svg" alt="" />
