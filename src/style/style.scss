@@ -265,6 +265,7 @@ nav {
   width: 160px;
   display: block;
   flex-direction: column;
+  margin-top: 18px;
   padding: 20px 60px;
   box-shadow: 2px 2px 8px #38b9fa8a;
   border-radius: 12px;
@@ -358,8 +359,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
-
     h3 {
       font-family: $primary-font;
       font-size: $fontsize-title;
@@ -375,6 +374,7 @@ footer {
   .container-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
