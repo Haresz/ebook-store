@@ -4,6 +4,7 @@ import Category from "../component/Category";
 import ContainerCardBook from "../component/ContainerCardBook";
 import DataBook from "../utils/data";
 import Footer from "../component/Footer";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   let rekomendasiBuku = [];
