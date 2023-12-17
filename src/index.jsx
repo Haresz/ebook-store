@@ -5,6 +5,8 @@ import "./style/style.scss";
 import Dashboard from "./pages/Dashboard";
 import SubMenuPage from "./pages/SubMenuPage";
 import DetailBook from "./pages/DetailBook";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/detailBook",
     element: <DetailBook />,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
   },
 ]);
 
