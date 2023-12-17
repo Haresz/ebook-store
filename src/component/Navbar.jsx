@@ -6,10 +6,10 @@ import DataBook from "../utils/data";
 function Navbar({ dashboard, detail }) {
   return (
     <nav>
-      <div className="container-icon">
+      <Link to="/" className="container-icon">
         <img src="public/icon.png" alt="" />
         <p>CAPCIN</p>
-      </div>
+      </Link>
       <div className="nav-right">
         {dashboard === true ? (
           <Link to="/submenu" state={{ title: "MY BOOK", datas: DataBook }}>
