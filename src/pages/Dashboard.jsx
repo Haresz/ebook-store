@@ -11,7 +11,6 @@ function Dashboard() {
   DataBook.map((data) => {
     if (data.isRecommended === true) {
       rekomendasiBuku.push(data);
-      console.log(rekomendasiBuku);
     } else {
       mostPopular.push(data);
     }

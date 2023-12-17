@@ -1,5 +1,7 @@
 import React from "react";
 import Input from "./Input";
+import { Link } from "react-router-dom";
+import DataBook from "../utils/data";
 
 function Navbar({ dashboard, detail }) {
   return (
@@ -9,7 +11,11 @@ function Navbar({ dashboard, detail }) {
         <p>CAPCIN</p>
       </div>
       <div className="nav-right">
-        {dashboard === true ? <img src="public/mybook.svg" alt="" /> : null}
+        {dashboard === true ? (
+          <Link to="/submenu" state={{ title: "MY BOOK", datas: DataBook }}>
+            <img src="public/mybook.svg" alt="" />{" "}
+          </Link>
+        ) : null}
         {detail === false || dashboard === true ? (
           <Input search={true} placeholder="Search" />
         ) : null}
