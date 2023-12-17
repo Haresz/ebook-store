@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./style/style.scss";
@@ -10,7 +10,7 @@ import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/dashboard",
     element: <Dashboard />,
   },
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element: <DetailBook />,
   },
   {
-    path: "/login",
+    path: "/",
     element: <LoginPage />,
   },
   {
@@ -34,6 +34,8 @@ const router = createBrowserRouter([
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      {isLoggedIn ? <Dashboard /> : <LoginPage />}
+    </RouterProvider>
   </React.StrictMode>
 );
