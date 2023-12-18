@@ -2,16 +2,18 @@ import React from "react";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import ButtonFill from "../component/ButtonFill";
+import { useLocation } from "react-router-dom";
 
-function DetailBook(props) {
+function DetailBook() {
+  let { state } = useLocation();
   return (
     <div>
       <Navbar />
       <div className="container-detail__book">
         <div className="content-detail__book">
-          <h2>{props.title}</h2>
-          <h4>{props.author}</h4>
-          <p>{props.year}</p>
+          <h2>{state.title}</h2>
+          <h4>{state.author}</h4>
+          <p>{state.year}</p>
           <div className="detail">
             <div className="category-product">
               <img src="public/mybook.svg" alt="" />
@@ -19,7 +21,7 @@ function DetailBook(props) {
             </div>
             <hr />
             <div className="category-product category-product__detail">
-              <h4>{props.julahHalaman}</h4>
+              <h4>{state.jumlahHalaman}</h4>
               <p>Halaman</p>
             </div>
           </div>
@@ -141,7 +143,7 @@ function DetailBook(props) {
             <ButtonFill name="Tambah Ulasan" />
           </div>
         </div>
-        <img src="public/book/book-4.png" alt="" />
+        <img src={state.image} alt="" />
       </div>
       <Footer />
     </div>

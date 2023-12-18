@@ -10,7 +10,6 @@ import RegisterPage from "./pages/RegisterPage";
 
 // Periksa status login dari localStorage
 const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-console.log(isLoggedIn);
 
 // Buat router dengan rute yang sesuai
 const router = createBrowserRouter([

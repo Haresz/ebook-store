@@ -1,12 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CardBook(props) {
+  console.log(props.image);
   return (
-    <div className="card-book">
+    <Link
+      to="/detailBook"
+      state={{
+        title: props.title,
+        author: props.author,
+        year: "2001",
+        jumlahHalaman: "100",
+        image: props.src,
+      }}
+      className="card-book"
+    >
       <img src={props.src} alt="" />
       <h4>{props.title}</h4>
       <p>{props.author}</p>
-    </div>
+    </Link>
   );
 }
 
