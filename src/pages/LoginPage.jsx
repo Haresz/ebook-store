@@ -3,25 +3,28 @@ import Input from "../component/Input.jsx";
 import Headline from "../component/Headline.jsx";
 import ButtonFill from "../component/ButtonFill.jsx";
 import { Form } from "react-router-dom";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault(); // Hindari submit form bawaan
     // Simulasi validasi login (gantilah dengan logika autentikasi yang sesuai)
     if (userName === "Haresz09" && password === "AaN08&oO") {
       // Simpan informasi login di localStorage
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("username", userName);
-      redirect("/dashboard");
+      navigate("/dashboard"); // Gunakan history.push untuk mengarahkan
       alert("Login berhasil!");
     } else {
       alert("Login gagal. Periksa kembali username dan password.");
-      redirect("/");
+      navigate("/");
     }
   };
+
   return (
     <div className="container-relog">
       <div className="form">

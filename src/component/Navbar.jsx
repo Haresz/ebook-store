@@ -6,7 +6,7 @@ import DataBook from "../utils/data";
 function Navbar({ dashboard, detail }) {
   return (
     <nav>
-      <Link to="/" className="container-icon">
+      <Link to="/dashboard" className="container-icon">
         <img src="public/icon.png" alt="" />
         <p>CAPCIN</p>
       </Link>

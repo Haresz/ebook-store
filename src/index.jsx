@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./style/style.scss";
@@ -8,6 +8,11 @@ import DetailBook from "./pages/DetailBook";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 
+// Periksa status login dari localStorage
+const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+console.log(isLoggedIn);
+
+// Buat router dengan rute yang sesuai
 const router = createBrowserRouter([
   {
     path: "/dashboard",
@@ -31,11 +36,12 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Buat elemen root dan render aplikasi
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      {isLoggedIn ? <Dashboard /> : <LoginPage />}
+      {isLoggedIn === true ? <Dashboard /> : <LoginPage />}
     </RouterProvider>
   </React.StrictMode>
 );
