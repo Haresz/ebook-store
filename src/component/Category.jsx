@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Category(props) {
+function Category({ src, name, datas }) {
   return (
-    <div className="category">
-      <img src={props.src} alt="" />
-      <p>{props.name}</p>
-    </div>
+    <Link
+      to="/submenu"
+      state={{ title: name, datas: datas }}
+      className="category"
+    >
+      <img src={src} alt="" />
+      <p>{name}</p>
+    </Link>
   );
 }
 

@@ -72,7 +72,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-9.png",
+    image: "public/book/book-9.jpg",
     title: "The Lord of the Rings",
     author: "J.R.R. Tolkien",
     category: "novel",
@@ -81,7 +81,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-10.png",
+    image: "public/book/book-10.jpg",
     title: "To Kill a Mockingbird",
     author: "Harper Lee",
     category: "novel",
@@ -90,7 +90,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-11.png",
+    image: "public/book/book-11.jpg",
     title: "1984",
     author: "George Orwell",
     category: "novel",
@@ -99,7 +99,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-12.png",
+    image: "public/book/book-12.jpg",
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     category: "novel",
@@ -108,7 +108,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-13.png",
+    image: "public/book/book-13.jpg",
     title: "One Hundred Years of Solitude",
     author: "Gabriel Garcia Marquez",
     category: "novel",
@@ -117,7 +117,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-14.png",
+    image: "public/book/book-14.jpg",
     title: "Pride and Prejudice",
     author: "Jane Austen",
     category: "novel",
@@ -126,7 +126,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-15.png",
+    image: "public/book/book-15.jpg",
     title: "The Catcher in the Rye",
     author: "J.D. Salinger",
     category: "novel",
@@ -135,7 +135,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-16.png",
+    image: "public/book/book-16.jpg",
     title: "The Kite Runner",
     author: "Khaled Hosseini",
     category: "novel",
@@ -144,7 +144,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-17.png",
+    image: "public/book/book-17.jpg",
     title: "Capital in the Twenty-First Century",
     author: "Thomas Piketty",
     category: "economic",
@@ -153,7 +153,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-18.png",
+    image: "public/book/book-18.jpg",
     title:
       "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
     author: "Steven D. Levitt dan Stephen J. Dubner",
@@ -163,7 +163,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-19.png",
+    image: "public/book/book-19.jpg",
     title: "Thinking, Fast and Slow",
     author: "Daniel Kahneman",
     category: "economic",
@@ -172,7 +172,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-20.png",
+    image: "public/book/book-20.jpg",
     title: "The Big Short: Inside the Doomsday Machine",
     author: "Michael Lewis",
     category: "economic",
@@ -181,7 +181,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-21.png",
+    image: "public/book/book-21.jpg",
     title: "Nudge: Improving Decisions About Health, Wealth, and Happiness",
     author: "Richard H. Thaler dan Cass R. Sunstein",
     category: "economic",
@@ -190,7 +190,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-22.png",
+    image: "public/book/book-22.jpg",
     title:
       "Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty",
     author: "Abhijit V. Banerjee dan Esther Duflo",
@@ -200,7 +200,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-23.png",
+    image: "public/book/book-23.jpg",
     title: "The Wealth of Nations",
     author: "Adam Smith",
     category: "economic",
@@ -209,7 +209,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-24.png",
+    image: "public/book/book-24.jpg",
     title: "Free to Choose: A Personal Statement",
     author: "Milton Friedman dan Rose D. Friedman",
     category: "economic",
@@ -218,7 +218,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-25.png",
+    image: "public/book/book-25.jpg",
     title: "The Element: How Finding Your Passion Changes Everything",
     author: "Sir Ken Robinson",
     category: "education",
@@ -227,7 +227,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-26.png",
+    image: "public/book/book-26.jpg",
     title: "Mindset: The New Psychology of Success",
     author: "Carol S. Dweck",
     category: "education",
@@ -236,7 +236,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-27.png",
+    image: "public/book/book-27.jpg",
     title: "Make It Stick: The Science of Successful Learning",
     author: "Peter C. Brown, Henry L. Roediger III, dan Mark A. McDaniel",
     category: "education",
@@ -245,7 +245,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-28.png",
+    image: "public/book/book-28.jpg",
     title: "The Smartest Kids in the World: And How They Got That Way",
     author: "Amanda Ripley",
     category: "education",
@@ -254,7 +254,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-29.png",
+    image: "public/book/book-29.jpg",
     title:
       "How Children Succeed: Grit, Curiosity, and the Hidden Power of Character",
     author: "Paul Tough",
@@ -264,7 +264,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-30.png",
+    image: "public/book/book-30.jpg",
     title:
       "The Courage to Teach: Exploring the Inner Landscape of a Teacher's Life",
     author: "Parker J. Palmer",
@@ -274,7 +274,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-31.png",
+    image: "public/book/book-31.jpg",
     title: "Educated: A Memoir",
     author: "Tara Westover",
     category: "education",
@@ -283,7 +283,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-32.png",
+    image: "public/book/book-32.jpg",
     title:
       "Teach Like a Champion: 49 Techniques that Put Students on the Path to College",
     author: "Doug Lemov",
@@ -293,7 +293,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-33.png",
+    image: "public/book/book-33.jpg",
     title: "Where the Wild Things Are",
     author: "Maurice Sendak",
     category: "for-kids",
@@ -302,7 +302,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-34.png",
+    image: "public/book/book-34.jpg",
     title: "The Very Hungry Caterpillar",
     author: "Eric Carle",
     category: "for-kids",
@@ -311,7 +311,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-35.png",
+    image: "public/book/book-35.jpg",
     title: "Matilda",
     author: "Roald Dahl",
     category: "for-kids",
@@ -320,7 +320,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-36.png",
+    image: "public/book/book-36.jpg",
     title: "Charlotte's Web",
     author: "E.B. White",
     category: "for-kids",
@@ -329,7 +329,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-37.png",
+    image: "public/book/book-37.jpg",
     title: "Harry Potter and the Sorcerer'sStone",
     author: "J.K. Rowling",
     category: "for-kids",
@@ -338,7 +338,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-38.png",
+    image: "public/book/book-38.jpg",
     title: "Green Eggs and Ham",
     author: "Dr. Seuss",
     category: "for-kids",
@@ -347,7 +347,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-39.png",
+    image: "public/book/book-39.jpg",
     title: "The Gruffalo",
     author: "Julia Donaldson",
     category: "for-kids",
@@ -356,7 +356,7 @@ const DataBook = [
     isRecommended: false,
   },
   {
-    image: "public/book/book-40.png",
+    image: "public/book/book-40.jpg",
     title: "The Cat in the Hat",
     author: "Dr. Seuss",
     category: "for-kids",

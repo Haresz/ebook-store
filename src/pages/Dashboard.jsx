@@ -9,11 +9,27 @@ import { Link } from "react-router-dom";
 function Dashboard() {
   let rekomendasiBuku = [];
   let mostPopular = [];
+  let novel = [];
+  let selfimporov = [];
+  let economic = [];
+  let education = [];
+  let forkids = [];
   DataBook.map((data) => {
     if (data.isRecommended === true) {
       rekomendasiBuku.push(data);
-    } else {
+    } else if (data.isRecommended === false && mostPopular.length <= 3) {
       mostPopular.push(data);
+    }
+  });
+  DataBook.map((data) => {
+    if (data.category === "novel") {
+      novel.push(data);
+    } else if (data.category === "economic") {
+      economic.push(data);
+    } else if (data.category === "education") {
+      education.push(data);
+    } else if (data.category === "for-kids") {
+      forkids.push(data);
     }
   });
   return (
@@ -29,11 +45,27 @@ function Dashboard() {
         <div className="background-right"></div>
       </div>
       <div className="container-category">
-        <Category src="public/category-novel.svg" name="Novel" />
-        <Category src="public/category-self.svg" name="Self Improvmen" />
-        <Category src="public/category-economic.svg" name="Economic" />
-        <Category src="public/category-education.svg" name="Education" />
-        <Category src="public/category-forkids.svg" name="ForKids" />
+        <Category src="public/category-novel.svg" name="Novel" datas={novel} />
+        <Category
+          src="public/category-self.svg"
+          name="Self Improvmen"
+          datas={selfimporov}
+        />
+        <Category
+          src="public/category-economic.svg"
+          name="Economic"
+          datas={economic}
+        />
+        <Category
+          src="public/category-education.svg"
+          name="Education"
+          datas={education}
+        />
+        <Category
+          src="public/category-forkids.svg"
+          name="ForKids"
+          datas={forkids}
+        />
       </div>
       <ContainerCardBook
         title="REKOMENDASI BUKU"
