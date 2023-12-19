@@ -7,18 +7,20 @@ import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
 
 function Dashboard() {
-  const rekomendasiBuku = DataBook.filter((data) => data.isRecommended);
-  const mostPopular = DataBook.filter((data) => !data.isRecommended).slice(
-    0,
-    4
-  );
-  const novel = DataBook.filter((data) => data.category === "novel");
-  const selfimprovement = DataBook.filter(
+  localStorage.setItem("currentBook", JSON.stringify(DataBook));
+  const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
+
+  const rekomendasiBuku = storedData.filter((data) => data.isRecommended);
+  const mostPopular = storedData
+    .filter((data) => !data.isRecommended)
+    .slice(0, 4);
+  const novel = storedData.filter((data) => data.category === "novel");
+  const selfimprovement = storedData.filter(
     (data) => data.category === "self-imporovment"
   );
-  const economic = DataBook.filter((data) => data.category === "economic");
-  const education = DataBook.filter((data) => data.category === "education");
-  const forkids = DataBook.filter((data) => data.category === "for-kids");
+  const economic = storedData.filter((data) => data.category === "economic");
+  const education = storedData.filter((data) => data.category === "education");
+  const forkids = storedData.filter((data) => data.category === "for-kids");
 
   return (
     <div className="dashboard">
