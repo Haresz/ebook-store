@@ -19,6 +19,7 @@ function ContainerCardBook({ title, datas, dashboard }) {
             key={data.title}
             src={data.image}
             title={data.title}
+            year={data.year}
             author={data.author}
           />
         ))}
