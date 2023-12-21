@@ -12,11 +12,8 @@ function Dashboard() {
 
   if (storedData.length === 0) {
     setData(DataBook);
-  }
-
-  useEffect(() => {
     localStorage.setItem("currentBook", JSON.stringify(data));
-  }, [DataBook]);
+  }
 
   const rekomendasiBuku = storedData.filter((data) => data.isRecommended);
   const mostPopular = storedData
