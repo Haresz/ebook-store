@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CardBook(props) {
-  console.log(props.year);
   return (
     <Link
       to="/detailBook"
       state={{
+        index: props.index,
         title: props.title,
         author: props.author,
         year: props.year,

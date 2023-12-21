@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import DataBook from "../utils/data";
 
 function Navbar({ dashboard, detail }) {
+  localStorage.setItem("currentBook", JSON.stringify(DataBook));
+  const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
+  const mybook = storedData.filter((data) => data.mybook === true);
   return (
     <nav>
       <Link to="/dashboard" className="container-icon">
@@ -12,7 +15,7 @@ function Navbar({ dashboard, detail }) {
       </Link>
       <div className="nav-right">
         {dashboard === true ? (
-          <Link to="/submenu" state={{ title: "MY BOOK", datas: DataBook }}>
+          <Link to="/submenu" state={{ title: "MY BOOK", datas: mybook }}>
             <img src="public/mybook.svg" alt="" />{" "}
           </Link>
         ) : null}

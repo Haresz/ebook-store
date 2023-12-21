@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom";
 
 function RekomendasiBuku() {
   let { state } = useLocation();
-  console.log(state.datas);
 
   return (
     <>

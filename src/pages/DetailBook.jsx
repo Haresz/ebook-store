@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import ButtonFill from "../component/ButtonFill";
 import { useLocation } from "react-router-dom";
+import NotifAddBook from "../component/NotifAddBook";
 
 function DetailBook() {
   let { state } = useLocation();
+  const [popup, setPopup] = useState(false);
+
+  // Ambil data dari localStorage
+  const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
+
+  const handleUpdateData = () => {
+    // Lakukan perubahan pada data
+    if (storedData.length > 0) {
+      storedData[state.index].mybook = true;
+    }
+
+    // Simpan kembali data yang diperbarui ke localStorage
+    localStorage.setItem("currentBook", JSON.stringify(storedData));
+  };
+
   return (
     <div>
       <Navbar />
@@ -25,7 +41,7 @@ function DetailBook() {
               <p>Halaman</p>
             </div>
           </div>
-          <ButtonFill name="ADD BOOK" />
+          <ButtonFill onClick={handleUpdateData} name="ADD BOOK" />
           <div className="container-about__book">
             <div className="title-about__book">
               <h3>About Book</h3>

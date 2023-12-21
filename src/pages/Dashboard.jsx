@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../component/Navbar";
 import Category from "../component/Category";
 import ContainerCardBook from "../component/ContainerCardBook";
@@ -7,8 +7,14 @@ import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
 
 function Dashboard() {
-  localStorage.setItem("currentBook", JSON.stringify(DataBook));
   const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
+  // Jika tidak ada data di localStorage, inisialisasi dengan data default
+  if (storedData.length === 0) {
+    localStorage.setItem("currentBook", JSON.stringify(DataBook));
+  }
+
+  // Log data untuk memastikan bahwa data telah diambil dengan benar
+  console.log("Stored Data:", storedData);
 
   const rekomendasiBuku = storedData.filter((data) => data.isRecommended);
   const mostPopular = storedData

@@ -5,7 +5,7 @@ const DataBook = [
     author: "Dale Carnegie",
     category: "self-imporovment",
     year: "1936",
-    mybook: true,
+    mybook: false,
     isRecommended: true,
   },
   {
@@ -14,7 +14,7 @@ const DataBook = [
     author: "Jason Barron",
     category: "econimic",
     year: "2019",
-    mybook: true,
+    mybook: false,
     isRecommended: true,
   },
   {
@@ -23,7 +23,7 @@ const DataBook = [
     author: "Benjamin Graham",
     category: "econimic",
     year: "1949",
-    mybook: true,
+    mybook: false,
     isRecommended: true,
   },
   {
@@ -32,7 +32,7 @@ const DataBook = [
     author: "Morten T.Hansen",
     category: "self-imporovment",
     year: "2018",
-    mybook: true,
+    mybook: false,
     isRecommended: true,
   },
   {
@@ -41,7 +41,7 @@ const DataBook = [
     author: "Fellexandra Ruby",
     category: "self-imporovment",
     year: "2017",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -50,7 +50,7 @@ const DataBook = [
     author: "Hector Garcia & Frances...",
     category: "self-imporovment",
     year: "2016",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -59,7 +59,7 @@ const DataBook = [
     author: "Massimo Pigliucci",
     category: "self-imporovment",
     year: "2017",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -68,7 +68,7 @@ const DataBook = [
     author: "Mark Manson",
     category: "self-imporovment",
     year: "2016",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -77,7 +77,7 @@ const DataBook = [
     author: "J.R.R. Tolkien",
     category: "novel",
     year: "1954",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -86,7 +86,7 @@ const DataBook = [
     author: "Harper Lee",
     category: "novel",
     year: "1960",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -95,7 +95,7 @@ const DataBook = [
     author: "George Orwell",
     category: "novel",
     year: "1949",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -104,7 +104,7 @@ const DataBook = [
     author: "F. Scott Fitzgerald",
     category: "novel",
     year: "1925",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -113,7 +113,7 @@ const DataBook = [
     author: "Gabriel Garcia Marquez",
     category: "novel",
     year: "1967",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -122,7 +122,7 @@ const DataBook = [
     author: "Jane Austen",
     category: "novel",
     year: "1813",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -131,7 +131,7 @@ const DataBook = [
     author: "J.D. Salinger",
     category: "novel",
     year: "1951",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -140,7 +140,7 @@ const DataBook = [
     author: "Khaled Hosseini",
     category: "novel",
     year: "2003",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -149,7 +149,7 @@ const DataBook = [
     author: "Thomas Piketty",
     category: "economic",
     year: "2013",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -159,7 +159,7 @@ const DataBook = [
     author: "Steven D. Levitt dan Stephen J. Dubner",
     category: "economic",
     year: "2005",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -168,7 +168,7 @@ const DataBook = [
     author: "Daniel Kahneman",
     category: "economic",
     year: "2019",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -177,7 +177,7 @@ const DataBook = [
     author: "Michael Lewis",
     category: "economic",
     year: "2010",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -186,7 +186,7 @@ const DataBook = [
     author: "Richard H. Thaler dan Cass R. Sunstein",
     category: "economic",
     year: "2009",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -196,7 +196,7 @@ const DataBook = [
     author: "Abhijit V. Banerjee dan Esther Duflo",
     category: "economic",
     year: "2012",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -205,7 +205,7 @@ const DataBook = [
     author: "Adam Smith",
     category: "economic",
     year: "1776",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -214,7 +214,7 @@ const DataBook = [
     author: "Milton Friedman dan Rose D. Friedman",
     category: "economic",
     year: "1980",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -223,7 +223,7 @@ const DataBook = [
     author: "Sir Ken Robinson",
     category: "education",
     year: "2009",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -232,7 +232,7 @@ const DataBook = [
     author: "Carol S. Dweck",
     category: "education",
     year: "2006",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -241,7 +241,7 @@ const DataBook = [
     author: "Peter C. Brown, Henry L. Roediger III, dan Mark A. McDaniel",
     category: "education",
     year: "2014",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -250,7 +250,7 @@ const DataBook = [
     author: "Amanda Ripley",
     category: "education",
     year: "2014",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -260,7 +260,7 @@ const DataBook = [
     author: "Paul Tough",
     category: "education",
     year: "2013",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -270,7 +270,7 @@ const DataBook = [
     author: "Parker J. Palmer",
     category: "education",
     year: "2007",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -279,7 +279,7 @@ const DataBook = [
     author: "Tara Westover",
     category: "education",
     year: "2018",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -289,7 +289,7 @@ const DataBook = [
     author: "Doug Lemov",
     category: "education",
     year: "2008",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -298,7 +298,7 @@ const DataBook = [
     author: "Maurice Sendak",
     category: "for-kids",
     year: "1984",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -307,7 +307,7 @@ const DataBook = [
     author: "Eric Carle",
     category: "for-kids",
     year: "1984",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -316,7 +316,7 @@ const DataBook = [
     author: "Roald Dahl",
     category: "for-kids",
     year: "1988",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -325,7 +325,7 @@ const DataBook = [
     author: "E.B. White",
     category: "for-kids",
     year: "2015",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -334,7 +334,7 @@ const DataBook = [
     author: "J.K. Rowling",
     category: "for-kids",
     year: "1997",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -343,7 +343,7 @@ const DataBook = [
     author: "Dr. Seuss",
     category: "for-kids",
     year: "1960",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -352,7 +352,7 @@ const DataBook = [
     author: "Julia Donaldson",
     category: "for-kids",
     year: "2005",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
   {
@@ -361,7 +361,7 @@ const DataBook = [
     author: "Dr. Seuss",
     category: "for-kids",
     year: "1957",
-    mybook: true,
+    mybook: false,
     isRecommended: false,
   },
 ];

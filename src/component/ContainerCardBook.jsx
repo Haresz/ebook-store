@@ -14,9 +14,10 @@ function ContainerCardBook({ title, datas, dashboard }) {
         ) : null}
       </div>
       <div className="container-content">
-        {datas?.map((data) => (
+        {datas?.map((data, index) => (
           <CardBook
-            key={data.title}
+            key={index}
+            index={index}
             src={data.image}
             title={data.title}
             year={data.year}
