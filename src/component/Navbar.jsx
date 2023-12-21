@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "./Input";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import DataBook from "../utils/data";
 
 function Navbar({ dashboard, detail }) {
   const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
   const mybook = storedData.filter((data) => data.mybook === true);
+  let [searchParams, setSearchParams] = useSearchParams({ q: "" });
+  const q = searchParams.get("q");
+
   return (
     <nav>
       <Link to="/dashboard" className="container-icon">
@@ -19,7 +22,20 @@ function Navbar({ dashboard, detail }) {
           </Link>
         ) : null}
         {detail === false || dashboard === true ? (
-          <Input search={true} placeholder="Search" />
+          <Input
+            value={q}
+            onChange={(e) =>
+              setSearchParams(
+                (prev) => {
+                  prev.set("q", e.target.value);
+                  return prev;
+                },
+                { replace: true }
+              )
+            }
+            search={true}
+            placeholder="Search"
+          />
         ) : null}
         {dashboard === true ? (
           <div className="photo-profile-name">

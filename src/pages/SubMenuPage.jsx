@@ -12,8 +12,8 @@ function RekomendasiBuku() {
     <>
       <Navbar detail={false} />
       <ContainerCardBook
-        title={state.title}
-        datas={state.datas}
+        title={state?.title}
+        datas={state?.datas}
         dashboard={false}
       />
       <Footer />
