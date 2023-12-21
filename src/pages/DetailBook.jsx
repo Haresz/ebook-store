@@ -7,7 +7,6 @@ import NotifAddBook from "../component/NotifAddBook";
 
 function DetailBook() {
   let { state } = useLocation();
-  const [popup, setPopup] = useState(false);
 
   // Ambil data dari localStorage
   const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];

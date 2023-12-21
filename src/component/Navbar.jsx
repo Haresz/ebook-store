@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import DataBook from "../utils/data";
 
 function Navbar({ dashboard, detail }) {
-  localStorage.setItem("currentBook", JSON.stringify(DataBook));
   const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
   const mybook = storedData.filter((data) => data.mybook === true);
   return (
