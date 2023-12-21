@@ -1,19 +1,25 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 import ContainerCardBook from "../component/ContainerCardBook";
-import DataBook from "../utils/data";
 import Footer from "../component/Footer";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-function RekomendasiBuku() {
-  let { state } = useLocation();
+function SubMenuPage() {
+  const { datas, title } = useParams();
+
+  // No need to decodeURIComponent and then parse to JSON separately,
+  // you can directly parse the parameters received from useParams
+  const dataArray = JSON.parse(datas);
+  const dataTitle = JSON.parse(title);
+
+  console.log(dataArray);
 
   return (
     <>
       <Navbar detail={false} />
       <ContainerCardBook
-        title={state?.title}
-        datas={state?.datas}
+        title={dataTitle}
+        datas={dataArray}
         dashboard={false}
       />
       <Footer />
@@ -21,4 +27,4 @@ function RekomendasiBuku() {
   );
 }
 
-export default RekomendasiBuku;
+export default SubMenuPage;

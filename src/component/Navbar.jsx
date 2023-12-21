@@ -39,7 +39,7 @@ function Navbar({ dashboard, detail }) {
         ) : null}
         {dashboard === true ? (
           <div className="photo-profile-name">
-            <img src="public/fotoprofil.svg" alt="fotoProfil" />
+            <img src="../public/fotoprofil.svg" alt="fotoProfil" />
             <p>Hi Haresz!</p>
           </div>
         ) : null}

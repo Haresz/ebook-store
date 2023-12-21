@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Dashboard />,
   },
   {
-    path: "/submenu",
+    path: "/submenu/:datas/:title",
     element: <SubMenuPage />,
   },
   {

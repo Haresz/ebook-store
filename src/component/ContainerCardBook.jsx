@@ -7,35 +7,15 @@ function ContainerCardBook({ title, datas, dashboard }) {
   let [searchParams, setSearchParams] = useSearchParams();
   const q = searchParams.get("q");
 
-  // const [dataFilters, setDataFilters] = useState([]);
-
-  // Efek untuk memperbarui dataFilters saat nilai q berubah
-  // useEffect(() => {
-  //   // Filter datas berdasarkan nilai q
-  //   const filteredData = datas?.filter((data) => {
-  //     return data.title.toLowerCase().includes(q?.toLowerCase());
-  //   });
-
-  //   // Perbarui dataFilters
-  //   setDataFilters(filteredData);
-  // }, [q, datas]);
-
   const dataFilters = datas?.filter((data) => {
     return data.title.toLowerCase().includes(q?.toLowerCase());
   });
-
-  console.log(dataFilters);
-  console.log(q);
 
   return (
     <div className="container-cardbook">
       <div className="title-container-cardbook">
         <h3>{title}</h3>
-        {dashboard === true ? (
-          <Link to="/submenu" state={{ title: title, datas: datas }}>
-            Lihat semua
-          </Link>
-        ) : null}
+        {dashboard === true ? <Link to="/submenu">Lihat semua</Link> : null}
       </div>
       <div className="container-content">
         {dataFilters?.length === 0 ||
