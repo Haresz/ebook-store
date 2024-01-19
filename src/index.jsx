@@ -7,6 +7,7 @@ import SubMenuPage from "./pages/SubMenuPage";
 import DetailBook from "./pages/DetailBook";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import AuthContextProvider from "./context/AuthContext";
 
 // Periksa status login dari localStorage
 const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
@@ -39,8 +40,10 @@ const router = createBrowserRouter([
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      {isLoggedIn === true ? <Dashboard /> : <LoginPage />}
-    </RouterProvider>
+    <AuthContextProvider>
+      <RouterProvider router={router}>
+        {isLoggedIn === true ? <Dashboard /> : <LoginPage />}
+      </RouterProvider>
+    </AuthContextProvider>
   </React.StrictMode>
 );

@@ -2,40 +2,38 @@ import React, { useState } from "react";
 import Input from "../component/Input.jsx";
 import Headline from "../component/Headline.jsx";
 import ButtonFill from "../component/ButtonFill.jsx";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext.jsx";
 
 function LoginPage() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
-    e.preventDefault(); // Hindari submit form bawaan
-    // Simulasi validasi login (gantilah dengan logika autentikasi yang sesuai)
-    if (userName === "Haresz09" && password === "AaN08&oO") {
-      // Simpan informasi login di localStorage
-      localStorage.setItem("isLoggedIn", "true");
-      localStorage.setItem("username", userName);
-      navigate("/dashboard"); // Gunakan history.push untuk mengarahkan
-      alert("Login berhasil!");
-    } else {
-      alert("Login gagal. Periksa kembali username dan password.");
-      navigate("/");
+  const {
+    sigIn,
+    sigInWithGoogleAuth,
+    sigInWithFacebookAuth,
+    sigInWithMicrosoft,
+    sigInWithApple,
+  } = UserAuth();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await sigIn(userName, password);
+      navigate("/dashboard");
+    } catch (error) {
+      alert(error.message);
+      console.log(error);
     }
   };
 
   return (
     <div className="container-relog">
       <div className="form">
-        <Form
-          onSubmit={handleLogin}
-          action={
-            userName === "Haresz09" && password === "AaN08&oO"
-              ? "/dashboard"
-              : "/"
-          }
-        >
+        <Form onSubmit={handleLogin}>
           <Headline name="LOGIN" />
           <h2>Welcome to capcin always for you</h2>
           <Input
@@ -64,7 +62,9 @@ function LoginPage() {
           <img src="public/Facebook.svg" alt="" />
           <img src="public/Apple.svg" alt="" />
         </div>
-        <p className="text-reg">Don't have a account ? Click here</p>
+        <p className="text-reg">
+          Don't have a account ? <Link to={"/register"}>Click here</Link>
+        </p>
       </div>
       <img src="public/relog.jpeg" alt="" />
     </div>

@@ -57,7 +57,6 @@ export default function AuthContextProvider({ children }) {
   const value = {
     createUser,
     signIn,
-    signInWithEmailAndPassword,
     signInWithGoogleAuth,
     signInWithFacebookAuth,
     signInWithMicrosoft,
