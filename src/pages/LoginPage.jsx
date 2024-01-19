@@ -12,7 +12,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const {
-    sigIn,
+    signIn,
     sigInWithGoogleAuth,
     sigInWithFacebookAuth,
     sigInWithMicrosoft,
@@ -22,7 +22,7 @@ function LoginPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await sigIn(userName, password);
+      await signIn(userName, password);
       navigate("/dashboard");
     } catch (error) {
       alert(error.message);
