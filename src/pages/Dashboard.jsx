@@ -14,7 +14,6 @@ function Dashboard() {
     const query = ref(db, "/datas");
     return onValue(query, (snapshot) => {
       const data = snapshot.val();
-      console.log(data, "halo");
       if (snapshot.exists()) {
         Object.values(data).map((book) => {
           setDatas((books) => [...books, book]);
@@ -22,8 +21,6 @@ function Dashboard() {
       }
     });
   }, []);
-
-  console.log(datas);
 
   const rekomendasiBuku = datas.filter((data) => data.isRecommended);
   const mostPopular = datas.filter((data) => !data.isRecommended).slice(0, 4);
@@ -34,10 +31,9 @@ function Dashboard() {
   const economic = datas.filter((data) => data.category === "economic");
   const education = datas.filter((data) => data.category === "education");
   const forkids = datas.filter((data) => data.category === "for-kids");
-
   return (
     <div className="dashboard">
-      <Navbar dashboard={true} />
+      <Navbar dashboard={true} datas={datas} />
       <div className="dashboard-headline">
         <div className="background-left"></div>
         <h1>

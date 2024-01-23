@@ -15,7 +15,11 @@ function ContainerCardBook({ title, datas, dashboard }) {
     <div className="container-cardbook">
       <div className="title-container-cardbook">
         <h3>{title}</h3>
-        {dashboard === true ? <Link to="/submenu">Lihat semua</Link> : null}
+        {dashboard === true ? (
+          <Link to="/submenu" state={{ datas: datas, title: title }}>
+            Lihat semua
+          </Link>
+        ) : null}
       </div>
       <div className="container-content">
         {dataFilters?.length === 0 ||

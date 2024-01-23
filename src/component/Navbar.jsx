@@ -3,12 +3,10 @@ import Input from "./Input";
 import { Link, useSearchParams } from "react-router-dom";
 import DataBook from "../utils/data";
 
-function Navbar({ dashboard, detail }) {
-  const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
-  const mybook = storedData.filter((data) => data.mybook === true);
+function Navbar({ dashboard, detail, datas }) {
+  const mybook = datas;
   let [searchParams, setSearchParams] = useSearchParams({ q: "" });
   const q = searchParams.get("q");
-
   return (
     <nav>
       <Link to="/dashboard" className="container-icon">
