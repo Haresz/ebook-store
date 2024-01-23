@@ -4,28 +4,36 @@ import Category from "../component/Category";
 import ContainerCardBook from "../component/ContainerCardBook";
 import DataBook from "../utils/data";
 import Footer from "../component/Footer";
-import { Link } from "react-router-dom";
+import { db } from "../firebase";
+import { onValue, ref } from "firebase/database";
 
 function Dashboard() {
-  const [data, setData] = useState([]);
-  const storedData = JSON.parse(localStorage.getItem("currentBook")) || [];
+  const [datas, setDatas] = useState([]);
 
-  if (storedData.length === 0) {
-    setData(DataBook);
-    localStorage.setItem("currentBook", JSON.stringify(data));
-  }
+  useEffect(() => {
+    const query = ref(db, "/datas");
+    return onValue(query, (snapshot) => {
+      const data = snapshot.val();
+      console.log(data, "halo");
+      if (snapshot.exists()) {
+        Object.values(data).map((book) => {
+          setDatas((books) => [...books, book]);
+        });
+      }
+    });
+  }, []);
 
-  const rekomendasiBuku = storedData.filter((data) => data.isRecommended);
-  const mostPopular = storedData
-    .filter((data) => !data.isRecommended)
-    .slice(0, 4);
-  const novel = storedData.filter((data) => data.category === "novel");
-  const selfimprovement = storedData.filter(
+  console.log(datas);
+
+  const rekomendasiBuku = datas.filter((data) => data.isRecommended);
+  const mostPopular = datas.filter((data) => !data.isRecommended).slice(0, 4);
+  const novel = datas.filter((data) => data.category === "novel");
+  const selfimprovement = datas.filter(
     (data) => data.category === "self-imporovment"
   );
-  const economic = storedData.filter((data) => data.category === "economic");
-  const education = storedData.filter((data) => data.category === "education");
-  const forkids = storedData.filter((data) => data.category === "for-kids");
+  const economic = datas.filter((data) => data.category === "economic");
+  const education = datas.filter((data) => data.category === "education");
+  const forkids = datas.filter((data) => data.category === "for-kids");
 
   return (
     <div className="dashboard">
